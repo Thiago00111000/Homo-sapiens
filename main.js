@@ -1,4 +1,13 @@
-document.querySelector('.tecla_pom').onclick = tocaPom;
+    //-Primeira fila-------------------------------------------
+    
     function tocaPom(){
         document.querySelector('#som_tecla_pom').play();
     }
+    
+    const listadeteclas = document.querySelectorAll('.tecla');
+
+    listadeteclas[0].onclick = tocaPom
+    
+    
+
+    
