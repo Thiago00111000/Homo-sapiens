@@ -3,14 +3,21 @@
     }
     
     const listadeteclas = document.querySelectorAll('.tecla');
+    
+    for(let contador = 0;   contador < listadeteclas.length; contador++) {
 
-    let contador = 0;
+        const tecla = listadeteclas[contador]
 
-    while( contador < 9) {
-        listadeteclas[contador].onclick = tocaSom;
+        const instrumento = tecla.classList[1];
 
-        contador = contador + 1;
+        const idAudio = `#som_${instrumento}`;
 
-        console.log(contador);
+        //console.log(idAudio);
+
+        listadeteclas[contador].onclick = function(){
+            tocaSom(idAudio)
+        }
+
+       // console.log(contador);
     }
     
