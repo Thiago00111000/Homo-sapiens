@@ -18,6 +18,10 @@
             tocaSom(idAudio)
         }
 
-       // console.log(contador);
+        // console.log(contador);
+
+        tecla.onkeydown = function(){
+            tecla.classList.add('')
+        }
     }
     
